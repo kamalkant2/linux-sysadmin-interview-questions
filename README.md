@@ -42,7 +42,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * Tell me about the biggest mistake you've made in [some recent time period] and how you would do it differently today. What did you learn from this experience?
 * Why we must choose you?
 * What function does DNS play on a network?
-* What is HTTP?
+* What is HTTP? http://learn.onemonth.com/understanding-http-basics
 * What is an HTTP proxy and how does it work?
 * Describe briefly how HTTPS works.
 * What is SMTP? Give the basic scenario of how a mail message is delivered via SMTP.
