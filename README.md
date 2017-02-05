@@ -42,14 +42,53 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * Tell me about the biggest mistake you've made in [some recent time period] and how you would do it differently today. What did you learn from this experience?
 * Why we must choose you?
 * What function does DNS play on a network?
-* What is HTTP? http://learn.onemonth.com/understanding-http-basics
+* What is HTTP? 
+  http://learn.onemonth.com/understanding-http-basics
 * What is an HTTP proxy and how does it work?
+  Basically a Server which process your internet requests in an organisation. hide the IP from outer world. The HTTP Proxy routes HTTP     Client requests from a Web browser to the Internet, while supporting the caching of Internet data.
 * Describe briefly how HTTPS works.
+HTTP over SSL or TLS
 * What is SMTP? Give the basic scenario of how a mail message is delivered via SMTP.
+Simple Mail transfer Protocol over port 25. 
 * What is RAID? What is RAID0, RAID1, RAID5, RAID10?
-* What is a level 0 backup? What is an incremental backup?
-* Describe the general file system hierarchy of a Linux system.
+RAID Level
 
+Min. Num of Drives
+
+Description
+
+Strengths
+
+Weaknesses
+
+RAID 0
+
+2
+Data striping without redundancy
+Highest performance
+No data protection; One drive fails, all data is lost
+RAID 1
+
+2
+Disk mirroring
+Very high performance; Very high data protection; Very minimal penalty on write performance
+High redundancy cost overhead; Because all data is duplicated, twice the storage capacity is required
+
+RAID 5
+
+3
+Block-level data striping with distributed parity
+Best cost/performance for transaction-oriented networks; Very high performance, very high data protection; Supports multiple simultaneous reads and writes; Can also be optimized for large, sequential requests
+Write performance is slower than RAID 0 or RAID 1
+RAID 0/1
+
+4
+Combination of RAID 0 (data striping) and RAID 1 (mirroring)
+Highest performance, highest data protection (can tolerate multiple drive failures)
+High redundancy cost overhead; Because all data is duplicated, twice the storage capacity is required; Requires minimum of four drives
+
+RAID level 10 – combining RAID 1 & RAID 0
+It is possible to combine the advantages (and disadvantages) of RAID 0 and RAID 1 in one single system. This is a nested or hybrid RAID configuration. It provides security by mirroring all data on secondary drives while using striping across each set of drives to speed up data transfers.
 
 ####[[⬆]](#toc) <a name='simple'>Simple Linux Questions:</a>
 
@@ -98,6 +137,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What does ```& disown``` after a command do?
 * What is a packet filter and how does it work?
 * What is Virtual Memory?
+http://www.tldp.org/LDP/sag/html/vm-intro.html
 * What is swap and what is it used for?
 * What is an A record, an NS record, a PTR record, a CNAME record, an MX record?
 * Are there any other RRs and what are they used for?
